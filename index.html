@@ -5,93 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>美唯と大誠の結婚式</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
     body {
-      font-family: 'Playfair Display', serif;
       margin: 0;
       padding: 0;
+      font-family: 'Roboto', sans-serif;
       background-color: #f5f5f5;
       color: #333;
     }
     header {
-      background-color: #6b8e23;
+      background-image: url('https://wedding.escrit.jp/place/palazzo-ducale/images/hero.jpg');
+      background-size: cover;
+      background-position: center;
       color: #fff;
       text-align: center;
-      padding: 2rem 0;
+      padding: 4rem 1rem;
     }
     header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
       margin: 0;
-      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    nav {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 400;
+    }
+    nav a:hover {
+      color: #6b8e23;
     }
     main {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 2rem auto;
-      padding: 1rem;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      color: #2c3e50;
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
+      padding: 0 1rem;
     }
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
-    .map {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .map img {
-      max-width: 100%;
-      border-radius: 8px;
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
     }
     .info {
       line-height: 1.8;
     }
-    .photos img {
+    .map img, .photos img {
       max-width: 100%;
-      margin-bottom: 1rem;
       border-radius: 8px;
+      margin-top: 1rem;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #6b8e23;
+      background-color: #333;
       color: #fff;
-      margin-top: 2rem;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    footer p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>美唯と大誠の結婚式</h1>
+    <p>特別な一日をお楽しみください</p>
   </header>
+  <nav>
+    <a href="#about">会場案内</a>
+    <a href="#access">アクセス</a>
+    <a href="#photos">写真ギャラリー</a>
+  </nav>
   <main>
-    <div class="section">
-      <h2>会場のご案内</h2>
+    <section id="about" class="section">
+      <h2>会場案内</h2>
       <p class="info">
         式場名：パラッツォ ドゥカーレ 麻布<br>
         住所：東京都港区六本木7-12-27<br>
         電話番号：03-6438-9193<br>
       </p>
-    </div>
-    <div class="section map">
+    </section>
+    <section id="access" class="section">
       <h2>アクセス</h2>
       <p class="info">
         最寄り駅：東京メトロ日比谷線「六本木駅」より徒歩2分<br>
         車でお越しの場合：近隣のコインパーキングをご利用ください。
       </p>
       <img src="https://wedding.escrit.jp/place/palazzo-ducale/images/access_map.jpg" alt="パラッツォ ドゥカーレ 麻布の地図">
-    </div>
-    <div class="section">
-      <h2>会場写真</h2>
+    </section>
+    <section id="photos" class="section">
+      <h2>写真ギャラリー</h2>
       <div class="photos">
         <img src="https://wedding.escrit.jp/place/palazzo-ducale/images/chapel.jpg" alt="チャペル">
         <img src="https://wedding.escrit.jp/place/palazzo-ducale/images/reception_hall.jpg" alt="披露宴会場">
       </div>
-    </div>
+    </section>
   </main>
   <footer>
     <p>© 2024 美唯と大誠の結婚式</p>
